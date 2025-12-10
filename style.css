@@ -1,0 +1,193 @@
+/* Genel */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0d0d0d;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.7;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+.logo {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2.2rem;
+  color: #e8f4ff;
+  text-shadow: 0 0 8px #66ccff;
+}
+.nav a {
+  margin: 0 15px;
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav a:hover { color: #66ccff; }
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.bg-video {
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.bg-image {
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url("arkaplan1.png") no-repeat center center/cover;
+  z-index: -3;
+}
+.overlay {
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+.hero h1 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 4rem;
+  text-shadow: 0 0 20px #00ccff;
+  transition: transform 0.3s ease;
+}
+.hero h1:hover { transform: scale(1.05); }
+.hero p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #4db8ff, #0077cc);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 0 12px rgba(0, 183, 255, 0.6);
+}
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #66ccff, #0099ff);
+  box-shadow: 0 0 18px rgba(0, 204, 255, 0.8);
+}
+
+/* Genel section */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #e8f4ff;
+  text-shadow: 0 0 10px rgba(0,204,255,0.3);
+}
+
+/* About */
+.about p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* Features */
+.features .feature-container {
+  display: flex; flex-wrap: wrap; gap: 30px;
+  justify-content: center;
+}
+.feature-box {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  width: 280px;
+  transition: transform 0.3s;
+}
+.feature-box i {
+  font-size: 2.5rem;
+  color: #66ccff;
+  margin-bottom: 15px;
+}
+.feature-box:hover { transform: translateY(-10px); }
+
+/* Gallery */
+.gallery-container {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 25px;
+}
+.screenshot-card {
+  width: 300px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.screenshot-card img {
+  width: 100%; height: 200px; object-fit: cover;
+}
+.screenshot-card p { padding: 15px; color: #ccc; }
+
+/* News */
+.news-container {
+  display: grid; gap: 20px; max-width: 800px; margin: auto;
+}
+.news-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+/* Team */
+.team-container {
+  display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;
+}
+.team-member {
+  width: 200px;
+}
+.team-member img {
+  width: 100%; border-radius: 50%; margin-bottom: 10px;
+}
+
+/* Contact */
+.contact form {
+  display: flex; flex-direction: column; gap: 15px;
+  max-width: 500px; margin: auto;
+  background: #1a1a1a;
+  padding: 30px; border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.contact input, .contact textarea {
+  padding: 12px; border: none; border-radius: 8px;
+}
+.contact button { align-self: center; }
+
+/* Footer */
+footer {
+  background: #0b0b0b;
+  padding: 30px 20px;
+  text-align: center;
+}
+footer .socials a {
+  margin: 0 10px;
+  color: #ccc;
+  font-size: 1.5rem;
+}
+footer .socials a:hover { color: #66ccff; }
